@@ -79,9 +79,19 @@
             бізнесу
           </h1>
           <button type="button"
-            class="hero-btn">
+            class="hero-btn" data-modal-open>
             Замовити послугу
           </button>
+        </div>
+
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button type="button" class="btn-close" data-modal-close>
+              <svg width="18" height="18">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -166,19 +176,30 @@
           </h2>
           <ul class="lists activity-list">
             <li class="activity-item">
-              <img src="./images/box-1.jpg"
+              <div class="image-container">
+                <img src="./images/box-1.jpg"
                 alt="Макбук та пленшет"
                 width="370"/>
+                <h3 class="activity-img-title">Десктопні додатки</h3>
+              </div>
             </li>
+
             <li class="activity-item">
-              <img src="./images/box-2.jpg"
+              <div class="image-container">
+                <img src="./images/box-2.jpg"
                 alt="Ноутбук та телефон"
                 width="370"/>
+                <h3 class="activity-img-title">Мобільні додатки</h3>
+              </div>
             </li>
+
             <li class="activity-item">
-              <img src="./images/box-3.jpg"
+              <div class="image-container">
+                <img src="./images/box-3.jpg"
                 alt="Планшет"
                 width="370"/>
+                <h3 class="activity-img-title">Дизайнерські рішення</h3>
+              </div>
             </li>
           </ul>
         </div>
@@ -199,7 +220,7 @@
                   Ігор Дем'яненко
                 </h3>
                 <p lang="en"
-                  class="team-post"                >
+                  class="team-post">
                   Product Designer
                 </p>
                 <ul class="team-soc-list lists">
@@ -488,4 +509,5 @@
       </div>
     </footer>
   </body>
+  <script src="./js/modal.js"></script>
 </html>
